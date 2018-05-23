@@ -15,11 +15,11 @@
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "dotenv": "^5.0.1",
     "express": "^4.16.3",
     "request": "^2.86.0"
   },
   "devDependencies": {
     "nodemon": "^1.17.3"
   }
-
 }
