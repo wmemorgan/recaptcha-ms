@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+
+  <!-- Google reCaptcha API -->
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Wilfred Morgan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div id="logo">
+      <h1>Wilfred Morgan</h1>
+    </div>
+    <ul class="navbar-nav">
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="#about">About</a>
+      </li>
+      <li>
+        <a href="#services">Services</a>
+      </li>
+      <li>
+        <a href="#projects">Projects</a>
+      </li>
+      <li>
+        <a href="#contact" class="contact-btn">Contact</a>
+      </li>
+    </ul>
+    <div id="open-slide">&#9776;</div>
+    <div id="side-menu" class="side-nav">
+      <a href="#" id="close-slide">&times;</a>
+      <a href="index.html" class="side-nav-link">Home</a>
+      <a href="#about" class="side-nav-link">About</a>
+      <a href="#services" class="side-nav-link">Services</a>
+      <a href="#projects" class="side-nav-link">Projects</a>
+      <a href="#contact" class="contact-btn side-nav-link">Contact</a>
+    </div>
+  </nav>
+  <div id="contact" class="form-wrapper contact-form">
+    <span id="close-form">&times;</span>
+    <h3>Contact Me</h3>
+    <div class="alert">You message has been sent</div>
+    <form id="contact-me" name="contact-me" target="hidden_iframe" action="https://03zioqcaua.execute-api.us-east-2.amazonaws.com/prod/recaptcha-api">
+      <p class="cta">How can I help you?</p>
+      <p>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" required>
+      </p>
+      <p>
+        <label for="company">Company</label>
+        <input type="text" name="company" id="company">
+      </p>
+      <p>
+        <label for="email">Email Address</label>
+        <input type="email" name="email" id="email" required>
+      </p>
+      <p>
+        <label for="phone">Phone Number</label>
+        <input type="text" name="phone" id="phone">
+      </p>
+      <p class="full">
+        <label for="message">Message</label>
+        <textarea name="message" id="message" rows="5"></textarea>
+      </p>
+
+      <!-- Test recaptcha key -->
+      <!-- <div class="g-recaptcha" data-sitekey="6Ld6J1oUAAAAAAvqQ6tXlUfNKsji8dR5HvLxUwaV"></div> -->
+
+      <!-- Production recaptcha key -->
+      <div class="g-recaptcha" data-sitekey="6LddKloUAAAAAPW9DJ_i3azVWbhyj63K_eScTIbv"></div>
+      <p class="full">
+        <button type="submit">Submit</button>
+      </p>
+    </form>
+  </div>
+
+  <div class="container" id="main">
+    <header id="intro">
+      <h1>Software Developer</h1>
+      <p>
+        I work with organizations, large and small, in leveraging technology and data to solve problems and achieve business goals.
+      </p>
+      <p>
+        <a href="#contact" class="contact-btn">Contact me</a> today and let’s discuss how I can help you tackle your biggest information and technology obstacles.
+      </p>
+    </header>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="about-text">
+        <p>I am an entrepreneur and Information Technology (IT) professional with over 15 years of experience in the technology
+          field working in a variety of industries including the healthcare, retail, government, and technology startup sectors.</p>
+        <p>My previous engagements included IT strategy development, infrastructure architecture design, and business intelligence
+          (BI) platform deployment.</p>
+        <p>My current focus is in
+          <a href="#services">software development</a> and
+          <a href="#services">data engineering</a>. I utilize my technical skills and professional experience to help clients</p>
+        <ul>
+          <li>Leverage technology and data to overcome the most painful barriers to an organization’s success.</li>
+          <li>Increase an organization’s capacity to provide more value to its customers and stakeholders through technology
+            and data.
+          </li>
+        </ul>
+        <p>
+          <a href="#contact" class="contact-btn">Contact me</a> at and if you would like to discuss how I can help you solve your biggest challenges and achieve
+          even greater success.
+        </p>
+      </div>
+    </section>
+
+    <section id="services">
+      <h2>Everything
+        <br>You Need</h2>
+      <p>I am available for projects in the following areas:</p>
+      <ul>
+        <li>IT Strategy Development and Management</li>
+        <li>Infrastructure Architecture Design</li>
+        <li>Security Risk Assessment</li>
+        <li>Project Management</li>
+        <li>Software Development</li>
+        <li>Data Science Services</li>
+      </ul>
+      <p>
+        <a href="#contact" class="contact-btn">Contact me</a> if you’re interested in a consultation or project engagement.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-items">
+        <!-- Simon Game Summary -->
+        <div class="card project-item card-summary">
+          <img class="card-summary-btn" src="images/simon-game.png" alt="project image">
+          <div class="card-caption">
+            <h2 class="portfolio-title">Simon Game Summary</h2>
+            <p class="portfolio-desc"> Recreation of the classic Simon game.</p>
+            <a href="#" class="portfolio-link">More info</a>
+          </div>
+        </div>
+        <!-- Simon Game Details -->
+        <div class="card project-item card-detail">
+          <span class="card-title">Development
+            <i class="fas fa-times card-close-btn"></i>
+          </span>
+          <p>
+            The project showcases front-end development using HTML, CSS3, and Javascript (ES6) technology
+          </p>
+          <ul>
+            <li>
+              <strong>Vanilla Javascript</strong> program and game logic</li>
+            <li>
+              <strong>HTML</strong> content layout</li>
+            <li>
+              <strong>CSS</strong> format and game effects</li>
+          </ul>
+          <div class="card-action">
+            <a href="http://wilfredmorgan.com/simon-game" class="live-app" target="_blank">
+              <i class="fas fa-external-link-alt" title="View Online"></i>
+              <br> View Online
+            </a>
+            <a href="http://github.com/wmemorgan/simon-game" class="source-code" target="_blank">
+              <i class="fab fa-github" title="View Source"></i>
+              <br> View Source
+            </a>
+          </div>
+        </div>
+
+        <!-- Tic-tac-toe Summary -->
+        <div class="card project-item card-summary">
+          <img class="card-summary-btn" src="images/tic-tac-toe.png" alt="project image">
+          <div class="card-caption">
+            <h2 class="portfolio-title">Tic-Tac-Toe</h2>
+            <p class="portfolio-desc">Tic-tac-toe game with 1 and 2 player modes</p>
+            <a href="#" class="portfolio-link">More info</a>
+          </div>
+        </div>
+        <!-- Tic-tac-toe Details -->
+        <div class="card project-item card-detail">
+          <span class="card-title">Development
+            <i class="fas fa-times card-close-btn"></i>
+          </span>
+          <p>
+            The project showcases front-end development using HTML, CSS3, and Javascript (ES6) technology
+          </p>
+          <ul>
+            <li>
+              <strong>Vanilla Javascript</strong> program and game logic</li>
+            <li>
+              <strong>HTML</strong> content layout</li>
+            <li>
+              <strong>CSS</strong> format and game effects</li>
+          </ul>
+          <div class="card-action">
+            <a href="http://wilfredmorgan.com/tic-tac-toe/" class="live-app" target="_blank">
+              <i class="fas fa-external-link-alt" title="View Online"></i>
+              <br> View Online
+            </a>
+            <a href="https://github.com/wmemorgan/tic-tac-toe" class="source-code" target="_blank">
+              <i class="fab fa-github" title="View Source"></i>
+              <br> View Source
+            </a>
+          </div>
+        </div>
+
+        <!-- JS Calculator Summary -->
+        <div class="card project-item card-summary">
+          <img class="card-summary-btn" src="images/calculator.png" alt="project image">
+          <div class="card-caption">
+            <h2 class="portfolio-title">Javascript Calculator</h2>
+            <p class="portfolio-desc">Calculator written in vanilla javascript</p>
+            <a href="#" class="portfolio-link">More info</a>
+          </div>
+        </div>
+        <!-- JS Calculator Details -->
+        <div class="card project-item card-detail">
+          <span class="card-title">Development
+            <i class="fas fa-times card-close-btn"></i>
+          </span>
+          <p>
+            The project showcases front-end development using HTML, CSS3, and Javascript (ES6) technology
+          </p>
+          <ul>
+            <li>
+              <strong>Vanilla Javascript</strong> program and game logic</li>
+            <li>
+              <strong>HTML</strong> content layout</li>
+            <li>
+              <strong>CSS</strong> format and game effects</li>
+          </ul>
+          <div class="card-action">
+            <a href="http://wilfredmorgan.com/calculator_js/" class="live-app" target="_blank">
+              <i class="fas fa-external-link-alt" title="View Online"></i>
+              <br> View Online
+            </a>
+            <a href="https://github.com/wmemorgan/calculator_js" class="source-code" target="_blank">
+              <i class="fab fa-github" title="View Source"></i>
+              <br> View Source
+            </a>
+          </div>
+        </div>
+
+        <!-- Face Detect App Summary -->
+        <div class="card project-item card-summary">
+          <img class="card-summary-btn" src="images/face-detection.png" alt="project image">
+          <div class="card-caption">
+            <h2 class="portfolio-title">Face Detection App</h2>
+            <p class="portfolio-desc">An app that can detect a human face in a picture</p>
+            <a href="#" class="portfolio-link">More info</a>
+          </div>
+        </div>
+        <!-- Face Detect App Details -->
+        <div class="card project-item card-detail">
+          <span class="card-title">Development
+            <i class="fas fa-times card-close-btn"></i>
+          </span>
+          <ul>
+            <li>
+              <strong>NodeJS</strong> backend</li>
+            <li>
+              <strong>PostgreSQL</strong> database</li>
+            <li>
+              <strong>React</strong> frontend</li>
+            <li>
+              <strong>Clarifai</strong> face detection api</li>
+          </ul>
+          <div class="card-action">
+            <a href="https://smart-brainapp.herokuapp.com" class="live-app" target="_blank">
+              <i class="fas fa-external-link-alt" title="View Online"></i>
+              <br> View Online
+            </a>
+            <a href="https://github.com/wmemorgan/face-detect-backend" class="source-code" target="_blank">
+              <i class="fab fa-github" title="View Source"></i>
+              <br> View Source
+            </a>
+          </div>
+        </div>
+
+        <!-- Image Search API Summary -->
+        <div class="card project-item card-summary">
+          <img class="card-summary-btn" src="images/google-api.png" alt="project image">
+          <div class="card-caption">
+            <h2 class="portfolio-title">Image Search Microservice</h2>
+            <p class="portfolio-desc"> An api that allows you to search for images and review recent searches</p>
+            <a href="#" class="portfolio-link">More info</a>
+          </div>
+        </div>
+        <!-- Image Search API Details -->
+        <div class="card project-item card-detail">
+          <span class="card-title">Development
+            <i class="fas fa-times card-close-btn"></i>
+          </span>
+          <ul>
+            <li>
+              <strong>NodeJS</strong> backend</li>
+            <li>
+              <strong>ExpressJS</strong> backend</li>
+            <li>
+              <strong>MongoDB</strong> database</li>
+            <li>
+              <strong>Google Custom Seach</strong> search engine api</li>
+          </ul>
+          <div class="card-action">
+            <a href="https://wme-image-search-api.glitch.me" class="live-app" target="_blank">
+              <i class="fas fa-external-link-alt" title="View Online"></i>
+              <br> View Online
+            </a>
+            <a href="https://github.com/wmemorgan/image-search-api" class="source-code" target="_blank">
+              <i class="fab fa-github" title="View Source"></i>
+              <br> View Source
+            </a>
+          </div>
+        </div>
+
+        <!-- File Metadata API Summary -->
+        <div class="card project-item card-summary">
+          <img class="card-summary-btn" src="images/rest-api.png" alt="project image">
+          <div class="card-caption">
+            <h2 class="portfolio-title">File Metadata Microservice</h2>
+            <p class="portfolio-desc">A microservice that reads the metadata of an uploaded file and returns the file size</p>
+            <a href="#" class="portfolio-link">More info</a>
+          </div>
+        </div>
+        <!-- File Metadata API Details -->
+        <div class="card project-item card-detail">
+          <span class="card-title">Development
+            <i class="fas fa-times card-close-btn"></i>
+          </span>
+          <ul>
+            <li>
+              <strong>NodeJS</strong> backend</li>
+            <li>
+              <strong>ExpressJS</strong> backend</li>
+          </ul>
+          <div class="card-action">
+            <a href="https://wme-file-metadata-ms.glitch.me" class="live-app" target="_blank">
+              <i class="fas fa-external-link-alt" title="View Online"></i>
+              <br> View Online
+            </a>
+            <a href="https://github.com/wmemorgan/file-metadata-ms" class="source-code" target="_blank">
+              <i class="fab fa-github" title="View Source"></i>
+              <br> View Source
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2018 Wilfred Morgan</p>
+  </footer>
+  <!-- Firebase API script -->
+  <script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
+  <!-- Custom script -->
+  <script src="script.js"></script>
+</body>
+
+</html>
