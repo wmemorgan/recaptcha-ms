@@ -22,6 +22,7 @@ const closeCardButton = document.getElementsByClassName('card-close-btn')
 const contactButton = document.getElementsByClassName('contact-btn')
 const closeForm = document.getElementById('close-form')
 const endpoint = "https://oo52c9psl9.execute-api.us-east-2.amazonaws.com/prod/ContactFormLambda"
+const captchaEndpoint = "http://localhost:3000/contact"
 
 // Side navigation functions
 const openSlideMenu = () => {
