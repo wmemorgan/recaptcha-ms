@@ -53,7 +53,7 @@
     <span id="close-form">&times;</span>
     <h3>Contact Me</h3>
     <div class="alert">You message has been sent</div>
-    <form id="contact-me" name="contact-me" target="hidden_iframe" action="https://03zioqcaua.execute-api.us-east-2.amazonaws.com/prod/recaptcha-api">
+    <form id="contact-me" name="contact-me" target="hidden_iframe">
       <p class="cta">How can I help you?</p>
       <p>
         <label for="name">Name</label>
@@ -76,14 +76,16 @@
         <textarea name="message" id="message" rows="5"></textarea>
       </p>
 
-      <!-- Test recaptcha key -->
-      <!-- <div class="g-recaptcha" data-sitekey="6Ld6J1oUAAAAAAvqQ6tXlUfNKsji8dR5HvLxUwaV"></div> -->
+
 
       <!-- Production recaptcha key -->
-      <div class="g-recaptcha" data-sitekey="6LddKloUAAAAAPW9DJ_i3azVWbhyj63K_eScTIbv"></div>
+      <!-- <div class="g-recaptcha" data-sitekey="6LddKloUAAAAAPW9DJ_i3azVWbhyj63K_eScTIbv"></div> -->
       <p class="full">
         <button type="submit">Submit</button>
       </p>
+
+      <!-- Test recaptcha key -->
+      <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
     </form>
   </div>
 
