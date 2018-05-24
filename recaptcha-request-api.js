@@ -1,5 +1,6 @@
 const https = require('https');
 const querystring = require('querystring');
+const request = require('request');
 const AWS = require("aws-sdk");
 const secretKey = process.env.SECRET;
 const contactformapi = process.env.CONTACTFORMAPI
@@ -36,7 +37,7 @@ exports.handler = (event, context, callback) => {
 
   console.log('Retrieved body content is:', body)
 
-  const submitContactForm = new Request(contactformapi, {
+  const submitContactForm = new request(contactformapi, {
     method: 'POST',
     // NOTE: change this setting in production
     mode: 'no-cors',
